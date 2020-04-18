@@ -1,0 +1,22 @@
+{
+  "name": "lifepoints-lambda",
+  "version": "1.0.0",
+  "description": "AWS lambda and infrastructure to support lifepoints",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonkiersey/lifepoints-lambda.git"
+  },
+  "author": "Jon Kiersey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonkiersey/lifepoints-lambda/issues"
+  },
+  "homepage": "https://github.com/jonkiersey/lifepoints-lambda#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.658.0"
+  }
+}
