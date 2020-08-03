@@ -1,3 +1,3 @@
-const { handler } = require('./src/handler');
+const handler = require('./src/handler');
 
-exports.handler = async (event) => await handler(event);
+exports.handler = async (event) => handler(event);

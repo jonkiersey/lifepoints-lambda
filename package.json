@@ -4,6 +4,7 @@
   "description": "AWS lambda and infrastructure to support lifepoints",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint \"**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/jonkiersey/lifepoints-lambda#readme",
   "devDependencies": {
-    "aws-sdk": "^2.658.0"
+    "aws-sdk": "^2.658.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
   }
 }
