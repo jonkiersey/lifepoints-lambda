@@ -12,4 +12,4 @@ const OPTIONS = () => {
   return response;
 };
 
-export default OPTIONS;
+module.exports = OPTIONS;

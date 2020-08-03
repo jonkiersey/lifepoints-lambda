@@ -16,4 +16,4 @@ const handler = async (event) => {
   return methodNotFound(event.httpMethod);
 };
 
-export default handler;
+module.exports = handler;

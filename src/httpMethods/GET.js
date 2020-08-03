@@ -1,3 +1,3 @@
 const GET = () => {};
 
-export default GET;
+module.exports = GET;

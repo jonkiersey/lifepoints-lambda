@@ -20,4 +20,4 @@ const PUT = async (event) => {
   };
 };
 
-export default PUT;
+module.exports = PUT;
