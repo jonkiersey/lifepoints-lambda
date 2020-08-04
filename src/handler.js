@@ -11,7 +11,7 @@ const methodNotFound = (method) => ({
 
 const handler = async (event) => {
   if (['GET', 'OPTIONS', 'PUT'].includes(event.httpMethod)) {
-    return httpMethods[event.httpMethod];
+    return httpMethods[event.httpMethod](event);
   }
   return methodNotFound(event.httpMethod);
 };
