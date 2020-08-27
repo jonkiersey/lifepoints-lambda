@@ -14,6 +14,20 @@ const GET = async (event) => {
     },
   };
 
+  if (event.queryStringParameters.startDate && event.queryStringParameters.endDate) {
+    params.KeyConditionExpression = 'userId = :hkey and #datetime BETWEEN :sdate AND :edate';
+    Object.assign(
+      params.ExpressionAttributeValues,
+      {
+        ':sdate': parseInt(event.queryStringParameters.startDate, 10),
+        ':edate': parseInt(event.queryStringParameters.endDate, 10),
+      },
+    );
+    params.ExpressionAttributeNames = {
+      '#datetime': 'datetime',
+    };
+  }
+
   const response = await dynamo.query(params).promise().then((data) => data).catch((err) => err);
   return {
     statusCode: 200,
